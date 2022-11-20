@@ -1,0 +1,51 @@
+<%- include("partials/header"); -%>
+
+<!-- Services I render -->
+<section class="services" id="services">
+    <div class="service-container">
+        <div class="service-intro">
+            <h2 class="service-tro-text">Awesome Services</h2>
+            <p class="service-intro-paragraph">An obvious Web Developer, experienced in all stages of the development cycle for dynamic web projects. NaccyWorld Technologies is a uniquely qualified website builder that everyone desires due to stack of experience in the utilisation of the modern tech tools that gives the best output to clients and industries.</p>
+        </div>
+        <div class="services-details">
+            <div id="web-development" class="service-items">
+                <span><i class="fa-solid fa-computer"></i></span>
+                <h4><%= serviceTitle[0] %></h4>
+                <p class="service-para"><%= serviceContent[0].substring(0, 41) + " ..." %></p>
+                <a href="services/web-development">Read more... <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div id="web-development" class="service-items">
+                <span><i class="fa-solid fa-computer"></i></span>
+                <h4><%= serviceTitle[1] %></h4>
+                <p class="service-para"><%= serviceContent[1].substring(0, 65) + " ..." %></p>
+                <a href="services/web-design-planning">Read more... <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div id="web-development" class="service-items">
+                <span><i class="fa-solid fa-computer"></i></span>
+                <h4><%= serviceTitle[2] %></h4>
+                <p class="service-para"><%= serviceContent[2].substring(0, 43) + " ..." %></p>
+                <a href="services/graphic-designs">Read more... <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div id="web-development" class="service-items">
+                <span><i class="fa-solid fa-computer"></i></span>
+                <h4><%= serviceTitle[3] %></h4>
+                <p class="service-para"><%= serviceContent[3].substring(0, 42) + " ..." %></p>
+                <a href="/services/adobe-photoshop">Read more... <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div id="marketing" class="service-items">
+                <span><i class="fa-solid fa-bullseye"></i></span>
+                <h4><%= serviceTitle[4] %></h4>
+                <p class="service-para"><%= serviceContent[4].substring(0, 64) + " ..." %></p>
+                <a href="services/digital-marketing">Read more... <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div id="availability" class="service-items">
+                <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                <h4><%= serviceTitle[5] %></h4>
+                <p class="service-para"><%= serviceContent[5].substring(0, 49) + " ..." %></p>
+                <a href="services/24-7">Read more... <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("partials/footer"); -%>

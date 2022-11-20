@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We are open and available for your web services" />
+    <meta name="keywords" content="html5, frontend, marketing, multipurpose, developer, website" />
+    <meta content="NaccyWorld" name="author" />
+    <script src="https://kit.fontawesome.com/34faa42f11.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italianno&family=Nunito:wght@200;300;400;500;600;700;800;900&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <meta name=”robots” content="index, follow">
+    <title>NaccyWorld</title>
+    <link rel="shortcut icon" href="/assets/favicon.png">
+
+    <script>
+        function hamburgerMenu() {
+            // Toggle the side menu
+            let hamburgerMenu = document.querySelector(".menu-overlay");
+            let menuStyle = getComputedStyle(hamburgerMenu);
+
+            if (menuStyle.display == "none") {
+                document.getElementById("right-nav").style.display = "flex";
+            } else {
+                document.getElementById("right-nav").style.display = "none";
+            }
+
+            // Exchange hamburger icon and close icon
+            let hamburgerIcon = document.querySelector("#ham-icon");
+            if (hamburgerIcon.classList.contains("fa-bars")) {
+                hamburgerIcon.classList.replace("fa-bars", "fa-times-circle");
+                return;
+            } else {
+                hamburgerIcon.classList.replace("fa-times-circle", "fa-bars");
+                return;
+            }
+        }
+
+        function hamburgerMenu() {
+            // Toggle the side menu
+            let hamburgerMenu = document.querySelector(".menu-overlay");
+            let menuStyle = getComputedStyle(hamburgerMenu);
+
+            if (menuStyle.display == "none") {
+                document.getElementById("right-nav").style.display = "flex";
+            } else {
+                document.getElementById("right-nav").style.display = "none";
+            }
+
+            // Exchange hamburger icon and close icon
+            let hamburgerIcon = document.querySelector("#ham-icon");
+            if (hamburgerIcon.classList.contains("fa-bars")) {
+                hamburgerIcon.classList.replace("fa-bars", "fa-times-circle");
+                return;
+            } else {
+                hamburgerIcon.classList.replace("fa-times-circle", "fa-bars");
+                return;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header id="nav-bar" class="navigation-bar">
+            <nav class="navigation-menu">
+                <a href=""><img src="/assets/my-logo.png" alt="Logo"></a>
+                <div id="ham-button" class="hamburger-button" onclick="hamburgerMenu()">
+                    <i id="ham-icon" class="fas fa-bars"></i>
+                </div>
+                <div id="right-nav" class="menu-items menu-overlay">
+                    <ul class="nav-links overlay-content">
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../services">Services</a></li>
+                        <li><a href="../#expertise">Expertise</a></li>
+                        <li><a href="../projects">Projects</a></li>
+                        <li><a href="../qualifications">Qualifications</a></li>
+                        <li><a href="../contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-social-media">
+                    <a href="https://web.facebook.com/tonij.nnamchi"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/NnamchiC"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/naccyworld/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anthony-nnamchi-680663120/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </nav>
+        </header>
